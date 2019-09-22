@@ -8,7 +8,7 @@ router.get('/api/friends',function(req,res)
 {
     return res.json(friendList);
 });
-router.post('/api/friends', function(req, res){
+router.post('apiroutes/api/friends', function(req, res){
     var newFriend = req.body;
     // res.json(newFriend);
     friendList.push(newFriend);
