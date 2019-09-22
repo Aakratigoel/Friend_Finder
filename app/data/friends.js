@@ -1,6 +1,6 @@
 var friendList = [{
     name:"Aakrati",
-    photo:"https://www.google.com/search?q=deepika+padukone&sxsrf=ACYBGNRo95RFVWJB-s4hmM5819rvi_x4Lg:1568943361905&tbm=isch&source=iu&ictx=1&fir=qsWUZS3wPo4s3M%253A%252CPCceUJ3UI4ydLM%252C%252Fm%252F09k68f&vet=1&usg=AI4_-kQuKBcte6t5M7X7KlJ4-GRnMvaImg&sa=X&ved=2ahUKEwjV84i-od7kAhXOi54KHZT-BgIQ_B0wK3oECAkQAw#imgrc=qsWUZS3wPo4s3M:&vet=1",
+    photo:"http://ancientindianwisdom.com/wp-content/uploads/2015/07/SunsetYogaPose.jpg",
     scores:[
         2,
         3,
@@ -17,7 +17,7 @@ var friendList = [{
 
 {
     name:"Amrita",
-    photo:"https://www.google.com/search?q=deepika+padukone&sxsrf=ACYBGNRo95RFVWJB-s4hmM5819rvi_x4Lg:1568943361905&tbm=isch&source=iu&ictx=1&fir=qsWUZS3wPo4s3M%253A%252CPCceUJ3UI4ydLM%252C%252Fm%252F09k68f&vet=1&usg=AI4_-kQuKBcte6t5M7X7KlJ4-GRnMvaImg&sa=X&ved=2ahUKEwjV84i-od7kAhXOi54KHZT-BgIQ_B0wK3oECAkQAw#imgrc=qsWUZS3wPo4s3M:&vet=1",
+    photo:"http://ancientindianwisdom.com/wp-content/uploads/2015/07/SunsetYogaPose.jpg",
     scores:[
         2,
         1,
@@ -34,7 +34,7 @@ var friendList = [{
 
 {
     name:"Agrim",
-    photo:"https://www.google.com/search?q=deepika+padukone&sxsrf=ACYBGNRo95RFVWJB-s4hmM5819rvi_x4Lg:1568943361905&tbm=isch&source=iu&ictx=1&fir=qsWUZS3wPo4s3M%253A%252CPCceUJ3UI4ydLM%252C%252Fm%252F09k68f&vet=1&usg=AI4_-kQuKBcte6t5M7X7KlJ4-GRnMvaImg&sa=X&ved=2ahUKEwjV84i-od7kAhXOi54KHZT-BgIQ_B0wK3oECAkQAw#imgrc=qsWUZS3wPo4s3M:&vet=1",
+    photo:"http://ancientindianwisdom.com/wp-content/uploads/2015/07/SunsetYogaPose.jpg",
     scores:[
         5,
         3,

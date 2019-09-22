@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -131,7 +130,8 @@
     </select>
 
     <h3><strong>Question 9</strong></h3>
-    <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+    <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.
+    </h4>
     <select class="chosen-select" id="q9">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -156,50 +156,76 @@
     <br>
 
     <!-- Submit Button -->
-    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
-     Submit</button>
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
+        aria-hidden="true"></i>
+      Submit</button>
 
     <hr>
     <footer class="footer">
       <div class="container">
-        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
+        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub
+            Repo</a></p>
       </div>
     </footer>
 
   </div>
+  <div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
 
-  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title"><strong>Best Match</strong></h2>
+        </div>
+        <div class="modal-body">
+          <h2 id="match-name"></h2>
+          <img id="match-img" src="https://cdn.pinkvilla.com/files/styles/contentpreview/public/Avengers%20Endgame%20Leaked%20images%20show%20that%20Iron%20Man%20will%20be%20seen%20in%20SEVERAL%20suits%20%282%29.jpg" alt="" height="80px" width="80px">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 
   <script type="text/javascript">
     // Chosen CSS
-    
+
     document.getElementById("submit").addEventListener("click", myFunction);
-  function myFunction()
-  {
-   
-    var newFriend = {
+    function myFunction() {
+      console.log("Entered the function");
+      var newFriend = {
         name: document.getElementById("name").value,
-        photo:document.getElementById("photo").value,
-        scores:[
-        document.getElementById("q1").value,
-         document.getElementById("q2").value,
-        document.getElementById("q3").value,
-         document.getElementById("q4").value,
-         document.getElementById("q5").value,
-        document.getElementById("q6").value,
-         document.getElementById("q7").value,
-        document.getElementById("q8").value,
-         document.getElementById("q9").value,
-         document.getElementById("q10").value]
+        photo: document.getElementById("photo").value,
+        scores: [
+          document.getElementById("q1").value,
+          document.getElementById("q2").value,
+          document.getElementById("q3").value,
+          document.getElementById("q4").value,
+          document.getElementById("q5").value,
+          document.getElementById("q6").value,
+          document.getElementById("q7").value,
+          document.getElementById("q8").value,
+          document.getElementById("q9").value,
+          document.getElementById("q10").value]
       };
       $.post("/apiroutes/api/friends", newFriend)
-        .then(function(response) {
-          console.log("add.html", response);
-          alert("Adding character...");
+        .then(function (response) {
+        
+          
+          // alert(response.photo);
+          $("#match-name").text(response.name);
+          $("#match-img").attr("src",response.photo);
+
+          // Show the modal with the best match
+          $("#results-modal").modal("toggle");
         });
 
-        
-  }
+
+    }
   </script>
 
 </body>

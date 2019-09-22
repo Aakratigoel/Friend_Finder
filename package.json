@@ -4,22 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Aakratigoel/Friend_Finder.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Aakratigoel/Friend_Finder/issues"
-  },
-  "homepage": "https://github.com/Aakratigoel/Friend_Finder#readme"
+  }
 }
